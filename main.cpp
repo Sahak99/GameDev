@@ -119,8 +119,8 @@ int Triangle_ClipAgainstPlane(sMath::float3d plane_p, sMath::float3d plane_n, Tr
 		return (plane_n.x * p.x + plane_n.y * p.y + plane_n.z * p.z - sMath::dotProduct(plane_n, plane_p));
 	};
 
-	// Create two temporary storage arrays to classify points either side of plane
-	// If distance sign is positive, point lies on "inside" of plane
+	// Create two temporary storage arrays to classify points on either side of a plane
+	// If distance sign is positive, point lies on the "inside" of a plane
 	sMath::float3d* inside_points[3];  int nInsidePointCount = 0;
 	sMath::float3d* outside_points[3]; int nOutsidePointCount = 0;
 
