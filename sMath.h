@@ -205,7 +205,8 @@ namespace sMath {
 		return sMath::vecPlusVec(lineStart, lineToIntersect);
 	}
 
-	//builds a normal to a plane out of four points
+	//B
+uilds a normal to a plane out of four points
 	sMath::float3d sMath::buildNormal(sMath::float3d const p1, sMath::float3d const p2, sMath::float3d const p3, sMath::float3d const p4)
 	{
 		sMath::float3d vec1, vec2, res;
